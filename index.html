@@ -21,11 +21,11 @@
             margin: 0;
             padding: 0;
         }
-        video {
+        /* video {
             height: 100%;
             width: 100%;
-        }
-        .credit {
+        } */
+        /* .credit {
             position: absolute;
             top:0;
             right: 0;
@@ -34,23 +34,64 @@
     padding: 1em;
     color: #fff;
 z-index: 2;
-}
+} */
         
-        a {
+        /* a {
             color: #fff;
 
+        } */
+
+
+        .glide__slide > * {
+            height: auto;
+            width: 100%
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="credit">
-        <div>Original <a href="https://www.youtube.com/watch?v=32Hp1LW08Yc">MARIO SCREAMING</a></div>
-        <div>by <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A">MetalKingBoo</a></div></dib>
-    </div>
-    <video width="320" height="240" autoplay  controls>
-        <source src="assets/mario-screaming.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
+
+
+      <div class="glide">
+        <div data-glide-el="track" class="glide__track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+                <video width="320" height="240"  controls>
+                    <source src="assets/mario-screaming.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                  <div class="credit">
+                    <div>Original <a href="https://www.youtube.com/watch?v=32Hp1LW08Yc">MARIO SCREAMING</a></div>
+                    <div>by <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A">MetalKingBoo</a></div></dib>
+                </div>
+            
+            </li>
+            <li class="glide__slide">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/547912809&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hunter-shackleton" title="TerraCrafter" target="_blank" style="color: #cccccc; text-decoration: none;">TerraCrafter</a> · <a href="https://soundcloud.com/hunter-shackleton/terminal-64" title="TERMINAL 64" target="_blank" style="color: #cccccc; text-decoration: none;">TERMINAL 64</a></div>
+            </li>
+            <li class="glide__slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mbeC2w-uIEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="credit">
+                    <div>Original <a href="https://www.youtube.com/watch?v=mbeC2w-uIEU">WARIO LAUGHING</a></div>
+                    <div>by <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A">MetalKingBoo</a></div></dib>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+      </div>
     
-</body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous"></script>
+      <script>
+        new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 3
+}).mount()
+      </script>
+    </body>
 </html>
