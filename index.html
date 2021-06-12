@@ -1,106 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177214020-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177214020-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-177214020-1');
-</script>
+      gtag("config", "UA-177214020-1");
+    </script>
 
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Screaming Mario</title>
 
-    
-    <style rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        /* video {
-            height: 100%;
-            width: 100%;
-        } */
-        /* .credit {
-            position: absolute;
-            top:0;
-            right: 0;
-            background: rgba(255,255,255,.3);
-    backdrop-filter: blur(3px);
-    padding: 1em;
-    color: #fff;
-z-index: 2;
-} */
-        
-        /* a {
-            color: #fff;
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        } */
+      body {
+        background: url("assets/mario-pattern.png");
+        padding-bottom: 44px;
+      }
+      iframe {
+        width: 100%;
+        aspect-ratio: 16 /9;
+      }
+      .screams {
+        scroll-snap-type: y mandatory;
+      }
 
-
-        .glide__slide > * {
-            height: auto;
-            width: 100%
-        }
+      .card {
+        scroll-snap-align: start;
+      }
+      .title {
+        color: white;
+      }
+      .subtitle {
+        color: white;
+      }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" />
-</head>
-<body>
-
-
-      <div class="glide">
-        <div data-glide-el="track" class="glide__track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-                <video width="320" height="240"  controls>
-                    <source src="assets/mario-screaming.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video>
-                  <div class="credit">
-                    <div>Original <a href="https://www.youtube.com/watch?v=32Hp1LW08Yc">MARIO SCREAMING</a></div>
-                    <div>by <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A">MetalKingBoo</a></div></dib>
-                </div>
-            
-            </li>
-            <li class="glide__slide">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/547912809&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hunter-shackleton" title="TerraCrafter" target="_blank" style="color: #cccccc; text-decoration: none;">TerraCrafter</a> · <a href="https://soundcloud.com/hunter-shackleton/terminal-64" title="TERMINAL 64" target="_blank" style="color: #cccccc; text-decoration: none;">TERMINAL 64</a></div>
-            </li>
-            <li class="glide__slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mbeC2w-uIEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="credit">
-                    <div>Original <a href="https://www.youtube.com/watch?v=mbeC2w-uIEU">WARIO LAUGHING</a></div>
-                    <div>by <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A">MetalKingBoo</a></div></dib>
-                </div>
-            </li>
-            <li class="glide__slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YWaq5Opv6Wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="credit">
-                    <div>Original <a href="https://www.youtube.com/watch?v=YWaq5Opv6Wg">WARIO LAUGHING 2</a></div>
-                    <div>by <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A">MetalKingBoo</a></div></dib>
-                </div>
-            </li>
-          </ul>
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-body">
+          <p class="title">Screaming Mar.io</p>
+          <p class="subtitle">Its time to scream now</p>
         </div>
-        <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+      </section>
+
+      <section class="screams">
+        <div class="card mb-6">
+          <header class="card-header">
+            <p class="card-header-title">
+              <a href="https://www.youtube.com/watch?v=32Hp1LW08Yc"
+                >MARIO SCREAMING</a
+              >
+            </p>
+          </header>
+          <video controls>
+            <source src="assets/mario-screaming.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="card-content">
+            by
+            <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A"
+              >MetalKingBoo</a
+            >
           </div>
-      </div>
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous"></script>
-      <script>
-        new Glide('.glide', {
-  type: 'carousel',
-  startAt: 0,
-  perView: 3
-}).mount()
-      </script>
-    </body>
+        </div>
+
+        <div class="card mb-6">
+          <header class="card-header">
+            <p class="card-header-title">
+              <a href="https://www.youtube.com/watch?v=mbeC2w-uIEU"
+                >WARIO LAUGHING</a
+              >
+            </p>
+          </header>
+          <iframe
+            src="https://www.youtube.com/embed/mbeC2w-uIEU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <div class="card-content">
+            by
+            <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A"
+              >MetalKingBoo</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              <a href="https://www.youtube.com/watch?v=YWaq5Opv6Wg"
+                >WARIO LAUGHING 2</a
+              >
+            </p>
+          </header>
+          <iframe
+            src="https://www.youtube.com/embed/YWaq5Opv6Wg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <div class="card-content">
+            by
+            <a href="https://www.youtube.com/channel/UC5qFn0qjYCcXX-i8aimML9A"
+              >MetalKingBoo</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
